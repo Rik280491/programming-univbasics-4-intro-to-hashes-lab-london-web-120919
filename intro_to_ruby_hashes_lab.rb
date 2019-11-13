@@ -15,16 +15,19 @@ def pioneer {
   
 end
 
-def id_generator
-  # return a hash with a key :id assigned to positive integer
+def id_generator {
+  :id => 28
+}
+  
 end
 
-def my_hash_creator(key, value)
-  # return a hash that includes the key and value parameters passed into this method
+def my_hash_creator(key, value) {
+  "key" => "value"
+}
 end
 
 def read_from_hash(hash, key)
-  # return the correct value using the hash and key parameters
+  hash["key"]
 end
 
 def update_counting_hash(hash, key)
